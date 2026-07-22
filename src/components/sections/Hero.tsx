@@ -12,6 +12,7 @@ export function Hero() {
   const roles = t('hero.roles', { returnObjects: true }) as string[];
   const [roleIndex, setRoleIndex] = useState(0);
   const prefersReducedMotion = useReducedMotion();
+  const [zoomOpen, setZoomOpen] = useState(false);
 
   useEffect(() => {
     const id = window.setInterval(
@@ -121,18 +122,50 @@ export function Hero() {
           <div className="h-full w-full overflow-hidden rounded-[2rem] border border-border bg-surface shadow-glow">
             <picture>
               <source srcSet={`${profile.avatarUrl.replace(/\.jpg$/, '.webp')}`} type="image/webp" />
-              <img
-                src={profile.avatarUrl}
-                alt={profile.fullName}
-                className="h-full w-full object-cover"
-                loading="eager"
-                fetchPriority="high"
-                width={480}
-                height={480}
-              />
+              <button
+                type="button"
+                onClick={() => setZoomOpen(true)}
+                aria-label="Agrandir l'avatar"
+                className="h-full w-full"
+              >
+                <img
+                  src={profile.avatarUrl}
+                  alt={profile.fullName}
+                  className="h-full w-full object-cover"
+                  loading="eager"
+                  fetchPriority="high"
+                  width={480}
+                  height={480}
+                />
+              </button>
             </picture>
           </div>
         </motion.div>
+        {zoomOpen && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 p-6"
+            onClick={() => setZoomOpen(false)}
+          >
+            <div className="relative max-h-[90vh] max-w-[90vw]">
+              <img
+                src={profile.avatarUrl}
+                alt={profile.fullName}
+                className="max-h-[90vh] max-w-[90vw] rounded-lg object-contain"
+                onClick={(e) => e.stopPropagation()}
+              />
+              <button
+                type="button"
+                onClick={() => setZoomOpen(false)}
+                className="absolute right-2 top-2 rounded-md bg-black/50 px-3 py-1 text-sm text-white"
+              >
+                Fermer
+              </button>
+            </div>
+          </motion.div>
+        )}
       </div>
     </section>
   );

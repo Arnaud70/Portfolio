@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Arnaud Akoèno AFEDIKOU — Full Stack Developer & UI/UX Designer",
-    "description": "Je développe des applications web modernes, performantes et évolutives tout en créant des interfaces élégantes et intuitives."
+    "description": "Je développe des applications web et mobiles modernes, performantes et évolutives tout en créant des interfaces élégantes et intuitives."
   },
   "nav": {
     "home": "Accueil",
@@ -20,7 +20,7 @@
     "greeting": "Bonjour, je suis",
     "name": "Arnaud Akoèno AFEDIKOU",
     "roles": ["Full Stack Developer", "UI/UX Designer", "Graphic Designer"],
-    "description": "Je conçois des applications web modernes, performantes et évolutives, et je façonne des interfaces élégantes qui donnent envie d'y rester. Chaque projet est pensé comme un produit fini, du code à l'expérience utilisateur.",
+    "description": "Je conçois des applications web et mobiles modernes, performantes et évolutives, et je façonne des interfaces élégantes qui donnent envie d'y rester. Chaque projet est pensé comme un produit fini, du code à l'expérience utilisateur.",
     "ctaProjects": "Découvrir mes projets",
     "ctaCv": "Télécharger mon CV",
     "scrollHint": "Défiler"
