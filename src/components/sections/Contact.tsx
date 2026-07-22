@@ -20,6 +20,7 @@ export function Contact() {
   const [values, setValues] = useState<ContactFormValues>(EMPTY_FORM);
   const [errors, setErrors] = useState<ContactFormErrors>({});
   const [status, setStatus] = useState<SubmitState>('idle');
+  const [missingConfig, setMissingConfig] = useState(false);
 
   const MailIcon = getIcon('email');
   const PhoneIcon = getIcon('whatsapp');
@@ -53,7 +54,9 @@ export function Contact() {
     setStatus('submitting');
     try {
       if (!serviceId || !templateId || !publicKey) {
-        throw new Error('EmailJS is not configured (missing VITE_EMAILJS_* environment variables).');
+        setMissingConfig(true);
+        setStatus('error');
+        return;
       }
       await emailjs.send(
         serviceId,
@@ -78,6 +81,12 @@ export function Contact() {
   function handleChange(field: keyof ContactFormValues, value: string) {
     setValues((prev) => ({ ...prev, [field]: value }));
     if (errors[field]) setErrors((prev) => ({ ...prev, [field]: undefined }));
+  }
+
+  function copyEnvExample() {
+    const txt = `VITE_EMAILJS_SERVICE_ID=service_5swz71c\nVITE_EMAILJS_TEMPLATE_ID=template_4nkitdm\nVITE_EMAILJS_PUBLIC_KEY=_AoD4g18c0It_6Ndr`;
+    void navigator.clipboard?.writeText(txt);
+    // small visual feedback could be added
   }
 
   return (
@@ -218,10 +227,28 @@ export function Contact() {
                   </p>
                 )}
                 {status === 'error' && (
-                  <p className="flex items-center gap-2 text-sm text-red-400">
-                    <ErrorIcon className="h-4 w-4" aria-hidden="true" />
-                    {t('contact.form.error')}
-                  </p>
+                  <div>
+                    {missingConfig ? (
+                      <div className="flex flex-col gap-2">
+                        <p className="flex items-center gap-2 text-sm text-yellow-400">
+                          <ErrorIcon className="h-4 w-4" aria-hidden="true" />
+                          EmailJS non configuré — ajoute les variables d'environnement `VITE_EMAILJS_*` et redémarre le serveur.
+                        </p>
+                        <p className="text-sm text-text-muted">Copier les valeurs d'exemple (colle dans un fichier <span className="font-mono">.env</span> à la racine) :</p>
+                        <pre className="rounded-md bg-surface-2 p-2 text-xs">VITE_EMAILJS_SERVICE_ID=service_5swz71c
+VITE_EMAILJS_TEMPLATE_ID=template_4nkitdm
+VITE_EMAILJS_PUBLIC_KEY=_AoD4g18c0It_6Ndr</pre>
+                        <div className="flex gap-2">
+                          <Button size="sm" onClick={copyEnvExample}>Copier les valeurs</Button>
+                        </div>
+                      </div>
+                    ) : (
+                      <p className="flex items-center gap-2 text-sm text-red-400">
+                        <ErrorIcon className="h-4 w-4" aria-hidden="true" />
+                        {t('contact.form.error')}
+                      </p>
+                    )}
+                  </div>
                 )}
               </div>
             </form>
