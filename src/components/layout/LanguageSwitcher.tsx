@@ -5,9 +5,9 @@ import { AnimatePresence, motion } from 'framer-motion';
 import { supportedLocales } from '@/i18n';
 import { cn } from '@/lib/utils';
 
-const LOCALE_LABELS: Record<string, { flag: string; label: string }> = {
-  fr: { flag: '🇫🇷', label: 'FR' },
-  en: { flag: '🇺🇸', label: 'EN' },
+const LOCALE_LABELS: Record<string, { icon: string; label: string }> = {
+  fr: { icon: '/flags/fr.svg', label: 'FR' },
+  en: { icon: '/flags/en.svg', label: 'EN' },
 };
 
 export function LanguageSwitcher() {
@@ -26,7 +26,7 @@ export function LanguageSwitcher() {
 
   return (
     <div ref={ref} className="relative">
-      <button
+        <button
         type="button"
         onClick={() => setOpen((o) => !o)}
         aria-haspopup="listbox"
@@ -35,7 +35,8 @@ export function LanguageSwitcher() {
         className="flex h-10 items-center gap-1.5 rounded-xl border border-border bg-surface px-3 text-sm font-medium text-text-muted transition-colors hover:border-primary/50 hover:text-primary"
       >
         <FaGlobe className="h-4 w-4" aria-hidden="true" />
-        <span>{current.label}</span>
+        <img src={current.icon} alt={current.label} className="ml-1 h-4 w-4 rounded-sm object-cover" />
+        <span className="ml-2">{current.label}</span>
       </button>
 
       <AnimatePresence>
@@ -63,8 +64,8 @@ export function LanguageSwitcher() {
                     i18n.language.startsWith(locale) ? 'text-primary' : 'text-text-muted',
                   )}
                 >
-                  <span aria-hidden="true">{LOCALE_LABELS[locale].flag}</span>
-                  {LOCALE_LABELS[locale].label}
+                  <img src={LOCALE_LABELS[locale].icon} alt={LOCALE_LABELS[locale].label} className="h-4 w-4 rounded-sm object-cover" aria-hidden="true" />
+                  <span className="ml-2">{LOCALE_LABELS[locale].label}</span>
                 </button>
               </li>
             ))}
