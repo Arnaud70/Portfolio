@@ -1,0 +1,191 @@
+{
+  "meta": {
+    "title": "Arnaud Akoèno AFEDIKOU — Full Stack Developer & UI/UX Designer",
+    "description": "I build modern, high-performance, scalable web applications while crafting elegant and intuitive interfaces."
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "experience": "Experience",
+    "projects": "Projects",
+    "services": "Services",
+    "certifications": "Certifications",
+    "github": "GitHub",
+    "contact": "Contact",
+    "downloadCv": "Download my CV",
+    "skipToContent": "Skip to main content"
+  },
+  "hero": {
+    "greeting": "Hi, I'm",
+    "name": "Arnaud Akoèno AFEDIKOU",
+    "roles": ["Full Stack Developer", "UI/UX Designer", "Graphic Designer"],
+    "description": "I design modern, high-performance, scalable web applications, and I craft elegant interfaces people actually want to use. Every project is treated as a finished product, from the code to the user experience.",
+    "ctaProjects": "Explore my projects",
+    "ctaCv": "Download my CV",
+    "scrollHint": "Scroll"
+  },
+  "about": {
+    "title": "About me",
+    "subtitle": "Who I am, and how I work",
+    "paragraph1": "A passionate Full Stack Developer, I design digital products end-to-end: from the most robust backend architecture down to the very last pixel of an interface. My journey has led me to work on complex REST APIs as well as complete brand identities, giving me a rare perspective — I understand code as well as design, and I know how to make the two work together.",
+    "paragraph2": "My technical curiosity keeps pushing me to explore new tools — React, Django, Node.js, NestJS — while holding on to one simple principle: technology only has value if it serves a clear, fast and enjoyable human experience. That belief guides every decision I make, from a software architecture choice to a color palette.",
+    "paragraph3": "My goal is simple: ship products I'm proud of, both for their technical quality and for how they feel to the end user. I work just as well independently as within a team, always with the same rigor, communication and respect for deadlines.",
+    "stats": {
+      "projects": "Projects delivered",
+      "experience": "Years of practice",
+      "technologies": "Technologies mastered",
+      "satisfaction": "Client satisfaction"
+    }
+  },
+  "skills": {
+    "title": "Skills",
+    "subtitle": "The tools and languages I build with",
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "database": "Databases",
+      "tools": "Tools & Design"
+    }
+  },
+  "experience": {
+    "title": "Experience",
+    "subtitle": "My journey, step by step",
+    "types": {
+      "education": "Education",
+      "project": "Project",
+      "freelance": "Freelance",
+      "internship": "Internship"
+    }
+  },
+  "projects": {
+    "title": "Projects",
+    "subtitle": "A selection of recent work, synced live with my GitHub",
+    "viewAll": "View all projects",
+    "viewMore": "View more",
+    "viewCode": "Source code",
+    "viewDemo": "Live demo",
+    "backToProjects": "Back to projects",
+    "filters": {
+      "all": "All",
+      "web": "Web",
+      "mobile": "Mobile",
+      "desktop": "Desktop",
+      "design": "Design"
+    },
+    "status": {
+      "live": "Live",
+      "in-progress": "In progress",
+      "archived": "Archived",
+      "concept": "Concept"
+    },
+    "loading": "Loading projects from GitHub…",
+    "error": "Couldn't load projects right now. Please try again later.",
+    "empty": "No projects in this category yet.",
+    "notFoundTitle": "Project not found",
+    "notFoundText": "This project doesn't exist or has been moved."
+  },
+  "services": {
+    "title": "Services",
+    "subtitle": "What I can build for you",
+    "items": {
+      "webDev": {
+        "title": "Web Development",
+        "description": "Showcase websites, web applications and custom platforms, fast and SEO-optimized."
+      },
+      "fullstack": {
+        "title": "Full Stack Applications",
+        "description": "Complete React / Node.js or Django architectures, from the data model to the final interface."
+      },
+      "django": {
+        "title": "Django Applications",
+        "description": "Back-offices, business platforms and robust APIs built with Django and Django REST Framework."
+      },
+      "api": {
+        "title": "REST APIs",
+        "description": "Secure, documented, production-ready APIs with authentication and role management."
+      },
+      "uiux": {
+        "title": "UI/UX Design",
+        "description": "Modern, user-centered interfaces, wireframes, interactive prototypes and design systems."
+      },
+      "logo": {
+        "title": "Logo Design",
+        "description": "Memorable visual identity, adapted for web, print and social media."
+      },
+      "affiches": {
+        "title": "Poster Design",
+        "description": "Impactful visuals for your campaigns, events and communications."
+      },
+      "identity": {
+        "title": "Visual Identity",
+        "description": "Complete brand guidelines: colors, typography, logo and consistent variations."
+      }
+    },
+    "cta": "Let's talk about your project"
+  },
+  "certifications": {
+    "title": "Certifications",
+    "subtitle": "Training and certifications completed",
+    "empty": "No certifications published yet — new courses are in progress, check back soon!"
+  },
+  "github": {
+    "title": "GitHub Activity",
+    "subtitle": "A live snapshot of my open-source activity",
+    "repos": "Public repos",
+    "followers": "Followers",
+    "following": "Following",
+    "topLanguages": "Most used languages",
+    "viewProfile": "View full GitHub profile",
+    "loading": "Loading GitHub stats…",
+    "error": "GitHub stats are temporarily unavailable."
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Have an idea or a project? Let's talk.",
+    "form": {
+      "name": "Full name",
+      "namePlaceholder": "Your name",
+      "email": "Email address",
+      "emailPlaceholder": "you@example.com",
+      "subject": "Subject",
+      "subjectPlaceholder": "Subject of your message",
+      "message": "Message",
+      "messagePlaceholder": "Describe your project or request…",
+      "submit": "Send message",
+      "submitting": "Sending…",
+      "success": "Message sent successfully! I'll get back to you shortly.",
+      "error": "Something went wrong. Please try again or email me directly.",
+      "errors": {
+        "nameRequired": "Please enter your name.",
+        "emailRequired": "Please enter your email.",
+        "emailInvalid": "This email address looks invalid.",
+        "subjectRequired": "Please enter a subject.",
+        "messageRequired": "Please write a message.",
+        "messageTooShort": "Your message is a bit short (10 characters minimum)."
+      }
+    },
+    "info": {
+      "title": "Contact details",
+      "email": "Email",
+      "phone": "Phone",
+      "whatsapp": "WhatsApp",
+      "linkedin": "LinkedIn",
+      "github": "GitHub"
+    }
+  },
+  "footer": {
+    "tagline": "Full Stack Developer & UI/UX Designer — building polished digital products.",
+    "quickLinks": "Quick links",
+    "followMe": "Follow me",
+    "rights": "All rights reserved."
+  },
+  "notFound": {
+    "title": "Page not found",
+    "text": "The page you're looking for doesn't exist or has been moved.",
+    "cta": "Back to home"
+  },
+  "common": {
+    "loading": "Loading…"
+  }
+}

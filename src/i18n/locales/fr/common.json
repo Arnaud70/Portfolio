@@ -1,0 +1,191 @@
+{
+  "meta": {
+    "title": "Arnaud Akoèno AFEDIKOU — Full Stack Developer & UI/UX Designer",
+    "description": "Je développe des applications web modernes, performantes et évolutives tout en créant des interfaces élégantes et intuitives."
+  },
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "skills": "Compétences",
+    "experience": "Expériences",
+    "projects": "Projets",
+    "services": "Services",
+    "certifications": "Certifications",
+    "github": "GitHub",
+    "contact": "Contact",
+    "downloadCv": "Télécharger mon CV",
+    "skipToContent": "Aller au contenu principal"
+  },
+  "hero": {
+    "greeting": "Bonjour, je suis",
+    "name": "Arnaud Akoèno AFEDIKOU",
+    "roles": ["Full Stack Developer", "UI/UX Designer", "Graphic Designer"],
+    "description": "Je conçois des applications web modernes, performantes et évolutives, et je façonne des interfaces élégantes qui donnent envie d'y rester. Chaque projet est pensé comme un produit fini, du code à l'expérience utilisateur.",
+    "ctaProjects": "Découvrir mes projets",
+    "ctaCv": "Télécharger mon CV",
+    "scrollHint": "Défiler"
+  },
+  "about": {
+    "title": "À propos de moi",
+    "subtitle": "Qui je suis, et comment je travaille",
+    "paragraph1": "Développeur Full Stack passionné, je conçois des produits numériques de bout en bout : de l'architecture backend la plus robuste jusqu'au dernier pixel d'une interface. Mon parcours m'a amené à travailler aussi bien sur des API REST complexes que sur l'identité visuelle complète de marques, ce qui me donne une vision rare : je comprends le code autant que le design, et je sais faire dialoguer les deux.",
+    "paragraph2": "Ma curiosité technique me pousse à explorer en continu de nouveaux outils — React, Django, Node.js, NestJS — tout en gardant un principe simple : la technologie n'a de valeur que si elle sert une expérience humaine claire, rapide et agréable. C'est cette conviction qui guide chacune de mes décisions, du choix d'une architecture logicielle à celui d'une palette de couleurs.",
+    "paragraph3": "Mon objectif est simple : livrer des produits dont je suis fier, aussi bien pour leur qualité technique que pour la sensation qu'ils procurent à l'utilisateur final. Je travaille en autonomie comme en équipe, avec la même exigence de rigueur, de communication et de respect des délais.",
+    "stats": {
+      "projects": "Projets réalisés",
+      "experience": "Années de pratique",
+      "technologies": "Technologies maîtrisées",
+      "satisfaction": "Satisfaction client"
+    }
+  },
+  "skills": {
+    "title": "Compétences",
+    "subtitle": "Les outils et langages avec lesquels je construis",
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "database": "Bases de données",
+      "tools": "Outils & Design"
+    }
+  },
+  "experience": {
+    "title": "Expériences",
+    "subtitle": "Mon parcours, étape par étape",
+    "types": {
+      "education": "Formation",
+      "project": "Projet",
+      "freelance": "Freelance",
+      "internship": "Stage"
+    }
+  },
+  "projects": {
+    "title": "Projets",
+    "subtitle": "Une sélection de réalisations récentes, synchronisée avec mon GitHub",
+    "viewAll": "Voir tous les projets",
+    "viewMore": "Voir plus",
+    "viewCode": "Code source",
+    "viewDemo": "Démo live",
+    "backToProjects": "Retour aux projets",
+    "filters": {
+      "all": "Tous",
+      "web": "Web",
+      "mobile": "Mobile",
+      "desktop": "Desktop",
+      "design": "Design"
+    },
+    "status": {
+      "live": "En ligne",
+      "in-progress": "En cours",
+      "archived": "Archivé",
+      "concept": "Concept"
+    },
+    "loading": "Chargement des projets depuis GitHub…",
+    "error": "Impossible de charger les projets pour le moment. Réessayez plus tard.",
+    "empty": "Aucun projet dans cette catégorie pour le moment.",
+    "notFoundTitle": "Projet introuvable",
+    "notFoundText": "Ce projet n'existe pas ou a été déplacé."
+  },
+  "services": {
+    "title": "Services",
+    "subtitle": "Ce que je peux construire pour vous",
+    "items": {
+      "webDev": {
+        "title": "Développement Web",
+        "description": "Sites vitrines, applications web et plateformes sur mesure, rapides et optimisées pour le référencement."
+      },
+      "fullstack": {
+        "title": "Applications Full Stack",
+        "description": "Architectures complètes React / Node.js ou Django, du modèle de données à l'interface finale."
+      },
+      "django": {
+        "title": "Applications Django",
+        "description": "Back-offices, plateformes métier et API robustes construites avec Django et Django REST Framework."
+      },
+      "api": {
+        "title": "API REST",
+        "description": "Conception d'API sécurisées, documentées et prêtes pour la production, avec authentification et gestion des rôles."
+      },
+      "uiux": {
+        "title": "Design UI/UX",
+        "description": "Interfaces modernes centrées utilisateur, wireframes, prototypes interactifs et design systems."
+      },
+      "logo": {
+        "title": "Création de Logo",
+        "description": "Identité visuelle mémorable, déclinée pour le web, le print et les réseaux sociaux."
+      },
+      "affiches": {
+        "title": "Création d'Affiches",
+        "description": "Supports visuels percutants pour vos campagnes, événements et communications."
+      },
+      "identity": {
+        "title": "Identité Visuelle",
+        "description": "Chartes graphiques complètes : couleurs, typographies, logo et déclinaisons cohérentes."
+      }
+    },
+    "cta": "Discutons de votre projet"
+  },
+  "certifications": {
+    "title": "Certifications",
+    "subtitle": "Formations et certifications suivies",
+    "empty": "Aucune certification publiée pour le moment — de nouvelles formations sont en cours, revenez bientôt !"
+  },
+  "github": {
+    "title": "Activité GitHub",
+    "subtitle": "Un aperçu en direct de mon activité open source",
+    "repos": "Dépôts publics",
+    "followers": "Abonnés",
+    "following": "Abonnements",
+    "topLanguages": "Langages les plus utilisés",
+    "viewProfile": "Voir le profil GitHub complet",
+    "loading": "Chargement des statistiques GitHub…",
+    "error": "Statistiques GitHub momentanément indisponibles."
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Une idée, un projet ? Écrivez-moi.",
+    "form": {
+      "name": "Nom complet",
+      "namePlaceholder": "Votre nom",
+      "email": "Adresse e-mail",
+      "emailPlaceholder": "vous@exemple.com",
+      "subject": "Sujet",
+      "subjectPlaceholder": "Sujet de votre message",
+      "message": "Message",
+      "messagePlaceholder": "Décrivez votre projet ou votre demande…",
+      "submit": "Envoyer le message",
+      "submitting": "Envoi en cours…",
+      "success": "Message envoyé avec succès ! Je vous réponds au plus vite.",
+      "error": "Une erreur est survenue. Merci de réessayer ou de m'écrire directement par e-mail.",
+      "errors": {
+        "nameRequired": "Merci d'indiquer votre nom.",
+        "emailRequired": "Merci d'indiquer votre e-mail.",
+        "emailInvalid": "Cette adresse e-mail semble invalide.",
+        "subjectRequired": "Merci d'indiquer un sujet.",
+        "messageRequired": "Merci de rédiger un message.",
+        "messageTooShort": "Votre message est un peu court (10 caractères minimum)."
+      }
+    },
+    "info": {
+      "title": "Coordonnées",
+      "email": "Email",
+      "phone": "Téléphone",
+      "whatsapp": "WhatsApp",
+      "linkedin": "LinkedIn",
+      "github": "GitHub"
+    }
+  },
+  "footer": {
+    "tagline": "Développeur Full Stack & Designer UI/UX — je construis des produits numériques soignés.",
+    "quickLinks": "Liens rapides",
+    "followMe": "Suivez-moi",
+    "rights": "Tous droits réservés."
+  },
+  "notFound": {
+    "title": "Page introuvable",
+    "text": "La page que vous cherchez n'existe pas ou a été déplacée.",
+    "cta": "Retour à l'accueil"
+  },
+  "common": {
+    "loading": "Chargement…"
+  }
+}
